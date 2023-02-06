@@ -1,10 +1,23 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
+const omikujiResultList = [
+  '大吉', '吉', '中吉', '小吉', '凶' 
+]
+
 const Omikuji = () => {
+  const [ omikujiResult, setOmikujiResult ] = useState<string>('？')
+  const getOmikujiResult = () => {
+    const result = omikujiResultList[Math.floor(Math.random() * 5)]
+    setOmikujiResult(result)
+  }
 
   return (
     <>
       <h1>おみくじアプリ</h1>
+      <button onClick={getOmikujiResult}>おみくじを引く</button>
+      <p>結果</p>
+      <p>{omikujiResult}</p>
       <ul>
         <li>
           <Link to="/">ホーム画面</Link>
