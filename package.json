@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "npx eslint ./src",
-    "fix": "npx eslint --fix ./src"
+    "lint": "npx eslint ./src && npx prettier --check ./src",
+    "fix": "npx eslint --fix ./src && npx prettier --write ./src"
   },
   "dependencies": {
     "react": "^18.2.0",
