@@ -1,8 +1,10 @@
 import { Route, Routes } from "react-router-dom"
-import "./App.css"
+import "../styles/App.css"
+import BookCreate from "./bookCreate"
 import Home from "./home"
 import Janken from "./janken"
 import Omikuji from "./omikuji"
+import Weather from "./weather"
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="omikuji" element={<Omikuji />} />
         <Route path="janken" element={<Janken />} />
+        <Route path="bookCreate" element={<BookCreate />} />
+        <Route path="weather" element={<Weather />} />
       </Routes>
     </>
   )

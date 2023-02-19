@@ -11,6 +11,12 @@ const Home = () => {
         <li>
           <Link to="/janken">じゃんけん</Link>
         </li>
+        <li>
+          <Link to="/bookCreate">本の画面</Link>
+        </li>
+        <li>
+          <Link to="/weather">天気予報</Link>
+        </li>
       </ul>
     </>
   )

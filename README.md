@@ -4,7 +4,7 @@ to study vite, react, and typescript by Janken and Omikuji
 # やったこと
 * とりあえずTypeScript、ESLint、Prettierは入れた
 
-# やりたいこと
+# これからやりたいこと
 * Auth0導入
 * CICD構築
 
