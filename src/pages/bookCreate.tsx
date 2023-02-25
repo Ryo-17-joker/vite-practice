@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useFetchData } from "../hooks/useFetchData"
 
 type VolumeInfo = {
   title: string
@@ -30,6 +31,11 @@ export const BookCreate = () => {
     console.log(result)
     setBooks(result ?? [])
   }
+  // const getBooks = async (keyword: string) => {
+  //   const url = "https://www.googleapis.com/books/v1/volumes?q=intitle:"
+  //   const resp = await useFetchData(`${url}${keyword}`)
+  //   return resp
+  // }
 
   const selectBook = (book: Books) => {
     setSelectedBookTitle(book.volumeInfo.title)
